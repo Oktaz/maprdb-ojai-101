@@ -29,6 +29,7 @@ import org.ojai.types.ODate;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Iterator;
 
 import static org.ojai.store.QueryCondition.Op.EQUAL;
@@ -42,7 +43,7 @@ import static org.ojai.store.QueryCondition.Op.LESS;
  */
 public class Ex01SimpleCRUD {
 
-  public static final String TABLE_PATH = "/apps/user_profiles";
+  public static final String TABLE_PATH = "/tmp/users";
 
   private Table table;
 
@@ -69,10 +70,10 @@ public class Ex01SimpleCRUD {
 
     System.out.println("\n\n========== QUERIES ==========");
     this.queryDocuments();
-
-
-    System.out.println("\n\n========== UPDATE ==========");
-    this.updateDocuments();
+//
+//
+//    System.out.println("\n\n========== UPDATE ==========");
+//    this.updateDocuments();
 
     this.table.close();
 
